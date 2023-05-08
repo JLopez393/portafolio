@@ -1,0 +1,11 @@
+{
+  "navbar_home": "Inicio",
+  "navbar_about": "A cerca",
+  "navbar_services": "Servicios",
+  "navbar_contact": "Contáctame",
+
+  "home_greeting": "¡Hola!",
+  "home_presentation": "Yo soy",
+  "home_strings": ["Josué López", "Programador Backend y Frontend", "Orgullosos papá de Emilio"],
+  "button_text": "Haz clic"
+}

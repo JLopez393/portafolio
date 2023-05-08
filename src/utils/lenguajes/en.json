@@ -1,0 +1,12 @@
+{
+  "navbar_home": "Home",
+  "navbar_about": "About",
+  "navbar_services": "Services",
+  "navbar_contact": "Contact",
+
+  "home_greeting": "Hi There!",
+  "home_presentation": "I Am",
+  "home_strings": ["Josué López", "Full Stack Developer", "Emilio's Father"],
+  "welcome_message": "Welcome!",
+  "button_text": "Click Me"
+}

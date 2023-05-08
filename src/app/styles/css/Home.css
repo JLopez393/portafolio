@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com");
+@import url("https://fonts.gstatic.com");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+#home-container {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  font-family: "Oswald", "sans-serif";
+}
+
+.home-presentation {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  /* background-color: #ccc; */
+  width: 80%;
+  height: fit-content;
+  max-width: 800px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.home-presentation h3,
+.home-presentation p {
+  color: white;
+  font-size: 1.3rem;
+}
+
+.home-description {
+  display: flex;
+  flex-direction: row;
+}
+
+.home-description p {
+  margin: 0 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.home-typed-text {
+  color: #2cbe68;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .home-presentation {
+    width: 90%;
+    max-width: none;
+    padding: 0 10px 0 15%;
+  }
+
+  .home-description {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+  }
+
+  .home-description p {
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+
+  .home-typed-text {
+    color: #2cbe68;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+}
