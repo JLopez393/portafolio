@@ -6,7 +6,8 @@
 
   "home_greeting": "Hi There!",
   "home_presentation": "I Am",
-  "home_strings": ["Josué López", "Full Stack Developer", "Emilio's Father"],
+  "home_strings": ["I am Josué López", "I am Full Stack Developer", "I am Emilio's Father"],
+  "home_text": "I'm a passionate Front and Back End developer, always looking for new challenges to grow and develop professionally. I thrive in challenging and dynamic work environments. I'm very good at working as a team, collaborating with the design and development teams to ensure that applications meet the required needs and expectations.",
   "welcome_message": "Welcome!",
   "button_text": "Click Me"
 }

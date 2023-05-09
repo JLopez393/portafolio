@@ -1,14 +1,22 @@
-@import url("https://fonts.googleapis.com");
-@import url("https://fonts.gstatic.com");
-@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url('https://fonts.googleapis.com');
+@import url('https://fonts.gstatic.com');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+:root {
+  --color-secundario: #2cbe68;
+  --color-primario: #ffc0b3;
+  --color-prueba: #631100;
+  --cvo: url('../../../assets/svg/download.svg');
+  --cvc: url('../../../assets/svg/download-1.svg');
+}
 
 #home-container {
-  background-color: black;
+  /* background-color: black; */
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 100%;
-  height: 100vh;
-  font-family: "Oswald", "sans-serif";
+  font-family: 'Oswald', 'sans-serif';
 }
 
 .home-presentation {
@@ -30,6 +38,12 @@
   font-size: 1.3rem;
 }
 
+.home-presentation p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: justify;
+}
+
 .home-description {
   display: flex;
   flex-direction: row;
@@ -49,10 +63,14 @@
 }
 
 @media screen and (max-width: 768px) {
+  #home-container {
+    z-index: 1;
+  }
+
   .home-presentation {
     width: 90%;
     max-width: none;
-    padding: 0 10px 0 15%;
+    padding: 55% 10px 0 15%;
   }
 
   .home-description {
@@ -71,5 +89,145 @@
     color: #2cbe68;
     font-weight: bold;
     font-size: 2rem;
+  }
+}
+
+/* cv */
+.intro__cv {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--color-secundario);
+  display: flex;
+}
+
+.intro__cv,
+.intro__cv::before,
+.intro__cv::after,
+.intro__cv span,
+.intro__cv span::before,
+.intro__cv span::after {
+  transition: all ease 0.5s;
+}
+
+.intro__cv {
+  position: relative;
+  display: inline-block;
+  padding: 0.3em;
+  margin: 1em;
+  border: solid 2px;
+  border-color: var(--color-secundario);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.intro__cv:hover {
+  box-shadow: 0 0 5em 0.5em rgba(50, 50, 150, 0.5);
+}
+
+.intro__cv span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6em 2em;
+  font-weight: bold;
+  color: var(--color-secundario);
+}
+.cvEN span {
+  width: 100%;
+}
+
+.cvES span {
+  width: 100%;
+}
+
+.intro__cv:hover span {
+  width: 100%;
+  background-color: var(--color-secundario);
+  color: var(--color-primario);
+}
+
+.intro__cv::before,
+.intro__cv::after,
+.intro__cv::before,
+.intro__cv::after {
+  content: '';
+  position: absolute;
+  border: 1px;
+}
+
+.intro__cv::before,
+.intro__cv::before {
+  border-style: solid none;
+}
+
+.intro__cv::before,
+.intro__cv span::after {
+  left: 0;
+  top: -0.4em;
+  width: 100%;
+  height: calc(100% + 0.8em);
+}
+
+.intro__cv::after,
+.intro__cv span::after {
+  border-style: none solid;
+}
+
+.intro__cv::after,
+.intro__cv span::before {
+  top: 0;
+  left: -0.4em;
+  height: 100%;
+  width: calc(100% + 0.8em);
+}
+
+.intro__cv:hover::after,
+.intro__cv:hover span::after {
+  transform: scaleY(0);
+}
+
+.intro__cv:hover::before,
+.intro__cv:hover span::before {
+  transform: scaleX(0);
+}
+
+.intro__cv:hover span::after,
+.intro__cv:hover span::before {
+  opacity: 0;
+}
+
+.cvc,
+.cvo {
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.cvc {
+  background-image: var(--cvc);
+  display: none;
+}
+
+.cvo {
+  background-image: var(--cvo);
+}
+
+.intro__cv:hover span .cvc {
+  display: block;
+}
+.intro__cv:hover span .cvo {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .intro__cv {
+    font-size: 1.5rem;
+  }
+
+  .cvo,
+  .cvc {
+    width: 40px;
+    height: 40px;
   }
 }

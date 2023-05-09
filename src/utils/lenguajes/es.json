@@ -6,6 +6,7 @@
 
   "home_greeting": "¡Hola!",
   "home_presentation": "Yo soy",
-  "home_strings": ["Josué López", "Programador Backend y Frontend", "Orgullosos papá de Emilio"],
+  "home_strings": ["Yo soy Josué López", "Yo soy Programador Backend y Frontend", "Yo soy un orgulloso papá de Emilio"],
+  "home_text": "Me considero alguien apasionado por lo que hace, siempre dispuesto a aprender algo nuevo y capaz de trabajar en equipo para poder cumplir las expectativas de los requerimientos. Me gusta las caminatas largas y conocer lugares, tengo una 'tarea' de tiempo completo, ser papá",
   "button_text": "Haz clic"
 }

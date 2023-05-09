@@ -1,12 +1,31 @@
 import Switch from '@mui/material/Switch';
+import { useEffect, useState } from 'react';
 import { styled } from '@mui/material/styles';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import { useDispatch, useSelector } from 'react-redux';
 import { setLenguaje, getLenguaje } from '../../../features/lenguajeSlice';
 
-export default function Navbar({ translations }:any) {
+export default function Navbar({ translations }: any) {
   const dispatch = useDispatch();
   const currentLanguage = useSelector(getLenguaje);
+  const [isNavbarFixed, setIsNavbarFixed] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
+      const shouldFixNavbar = scrollTop > 0;
+      setIsNavbarFixed(shouldFixNavbar);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const navbarClassName = isNavbarFixed ? 'navbar-fixed' : '';
 
   const MaterialUISwitch = styled(Switch)(({ theme }) => ({
     width: 58,
@@ -62,7 +81,7 @@ export default function Navbar({ translations }:any) {
 
   return (
     <>
-      <div className='wrapper'>
+      {/* <div className='wrapper'>
         <nav>
           <div className='lenguaje'>
             <p>es</p>
@@ -78,7 +97,7 @@ export default function Navbar({ translations }:any) {
             />
           </div>
 
-          {/* <a href='/' className='logo'>LOGO</a>  */}
+          {/* <a href='/' className='logo'>LOGO</a>  *************
           <input type='checkbox' name='' id='toggle' />
           <label htmlFor='toggle'>
             <li className='material-icons'>menu</li>
@@ -100,7 +119,44 @@ export default function Navbar({ translations }:any) {
             </ul>
           </div>
         </nav>
-      </div>
+      </div> */}
+      <nav className={`navbar ${navbarClassName}`}>
+        <input type='checkbox' id='check' />
+        <label htmlFor='check' className='checkbtn'>
+          <i className='bx bx-menu'></i>
+        </label>
+        {/* <label className='logo'>
+          
+        </label> */}
+        <div className='lenguaje'>
+            <p>es</p>
+            <FormControlLabel
+              control={
+                <MaterialUISwitch
+                  sx={{ m: 1 }}
+                  defaultChecked={currentLanguage === 'en' ? true : false}
+                  onChange={(event) => handleChange(event)}
+                />
+              }
+              label='en'
+            />
+          </div>
+        <ul>
+          <li>
+            <a href='#'>{translations?.['navbar_home']}</a>
+          </li>
+          <li>
+            <a href='#'>{translations?.['navbar_about']}</a>
+          </li>
+          <li>
+            <a href='#'>{translations?.['navbar_services']}</a>
+          </li>
+          <li>
+            <a href='#'>{translations?.['navbar_contact']}</a>
+          </li>
+        </ul>
+      </nav>
+      <section></section>
     </>
   );
 }
