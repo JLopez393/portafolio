@@ -1,12 +1,19 @@
 {
   "navbar_home": "Inicio",
   "navbar_about": "A cerca",
-  "navbar_services": "Servicios",
+  "navbar_experience": "Experiencia",
   "navbar_contact": "Contáctame",
 
   "home_greeting": "¡Hola!",
   "home_presentation": "Yo soy",
   "home_strings": ["Yo soy Josué López", "Yo soy Programador Backend y Frontend", "Yo soy un orgulloso papá de Emilio"],
   "home_text": "Me considero alguien apasionado por lo que hace, siempre dispuesto a aprender algo nuevo y capaz de trabajar en equipo para poder cumplir las expectativas de los requerimientos. Me gusta las caminatas largas y conocer lugares, tengo una 'tarea' de tiempo completo, ser papá",
-  "button_text": "Haz clic"
+  "home_button_text": "DESCARGAR ",
+
+  "about_dear": "Estimado visitante",
+  "about_first": "¡Hola! Soy Josué López, un apasionado programador full-stack con experiencia tanto en desarrollo web como en desarrollo móvil. Me encanta crear aplicaciones tanto para navegadores como para dispositivos móviles, y tengo un enfoque integral para brindar experiencias excepcionales a los usuarios en diferentes plataformas.",
+  "about_second": "Además de mi dedicación a la programación, también tengo una gran pasión por los deportes al aire libre. Cuando no estoy codificando, puedes encontrarme explorando senderos en mi bicicleta o disfrutando de una caminata en la naturaleza. Estos momentos me ayudan a encontrar equilibrio y a recargar energías para enfrentar nuevos desafíos en mi trabajo.",
+  "about_third": "Estoy emocionado de presentarte mi portafolio, donde podrás ver ejemplos de mis proyectos y cómo he aplicado mis habilidades técnicas en el desarrollo tanto web como móvil. Si tienes alguna pregunta o te interesa colaborar en un proyecto emocionante, no dudes en ponerse en contacto conmigo.",
+  "about_grateful": "¡Gracias por visitar mi portafolio y por tu tiempo!",
+  "about_work_name": "Programador Full-Stack"
 }

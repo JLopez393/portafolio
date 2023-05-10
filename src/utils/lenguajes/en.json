@@ -1,13 +1,19 @@
 {
   "navbar_home": "Home",
   "navbar_about": "About",
-  "navbar_services": "Services",
+  "navbar_experience": "Experience",
   "navbar_contact": "Contact",
 
   "home_greeting": "Hi There!",
   "home_presentation": "I Am",
   "home_strings": ["I am Josué López", "I am Full Stack Developer", "I am Emilio's Father"],
   "home_text": "I'm a passionate Front and Back End developer, always looking for new challenges to grow and develop professionally. I thrive in challenging and dynamic work environments. I'm very good at working as a team, collaborating with the design and development teams to ensure that applications meet the required needs and expectations.",
-  "welcome_message": "Welcome!",
-  "button_text": "Click Me"
+  "home_button_text": "DOWNLOAD ",
+
+  "about_dear": "Dear Visitor,",
+  "about_first": "Hi there! I'm Josué López, a passionate full-stack programmer with experience in both web and mobile development. I absolutely love creating applications for both browsers and mobile devices, and I take a comprehensive approach to deliver exceptional user experiences across different platforms.",
+  "about_second": "Apart from my dedication to programming, I also have a great passion for outdoor sports. When I'm not coding, you can find me exploring trails on my bicycle or enjoying a hike in nature. These moments help me find balance and recharge my energy to take on new challenges in my work.",
+  "about_third": "I'm thrilled to present you my portfolio, where you can see examples of my projects and how I've applied my technical skills in both web and mobile development. If you have any questions or are interested in collaborating on an exciting project, feel free to get in touch with me.",
+  "about_grateful": "Thank you for visiting my portfolio and for your time!",
+  "about_work_name": "Full-Stack Programmer"
 }

@@ -1,0 +1,14 @@
+.footer-container {
+  background-color: transparent;
+}
+.footer-container p {
+  text-align: center;
+  color: var(--color-secundario);
+  font-weight: bold;
+  margin: 0.25rem;
+}
+
+
+  .footer-nombre {
+    font-size: 1.3rem;
+  }
