@@ -21,7 +21,7 @@ function App() {
   return (
     <Routes>
       <Route
-        path='/portafolio'
+        path='/'
         element={<Layout translations={translations[currentLanguage]} />}
       >
         <Route path='home' element={<Home />} />

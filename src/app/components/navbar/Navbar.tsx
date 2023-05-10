@@ -87,16 +87,16 @@ export default function Navbar({ translations }: any) {
           </div>
         <ul>
           <li>
-            <a href='/portafolio/home'>{translations?.['navbar_home']}</a>
+            <a href='home'>{translations?.['navbar_home']}</a>
           </li>
           <li>
-            <a href='/portafolio/about'>{translations?.['navbar_about']}</a>
+            <a href='about'>{translations?.['navbar_about']}</a>
           </li>
           <li>
-            <a href='/portafolio/experience'>{translations?.['navbar_experience']}</a>
+            <a href='experience'>{translations?.['navbar_experience']}</a>
           </li>
           <li>
-            <a href='/portafolio/home'>{translations?.['navbar_contact']}</a>
+            <a href='home'>{translations?.['navbar_contact']}</a>
           </li>
         </ul>
       </nav>
