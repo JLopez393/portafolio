@@ -4,6 +4,7 @@ import { styled } from '@mui/material/styles';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import { useDispatch, useSelector } from 'react-redux';
 import { setLenguaje, getLenguaje } from '../../../features/lenguajeSlice';
+import { Link } from 'react-router-dom';
 
 export default function Navbar({ translations }: any) {
   const dispatch = useDispatch();
@@ -87,16 +88,16 @@ export default function Navbar({ translations }: any) {
           </div>
         <ul>
           <li>
-            <a href='home'>{translations?.['navbar_home']}</a>
+            <Link className='nav-Link' to='home'>{translations?.['navbar_home']}</Link>
           </li>
           <li>
-            <a href='about'>{translations?.['navbar_about']}</a>
+            <Link className='nav-Link' to='about'>{translations?.['navbar_about']}</Link>
           </li>
           <li>
-            <a href='experience'>{translations?.['navbar_experience']}</a>
+            <Link className='nav-Link' to='experience'>{translations?.['navbar_experience']}</Link>
           </li>
           <li>
-            <a href='home'>{translations?.['navbar_contact']}</a>
+            <Link className='nav-Link' to='home'>{translations?.['navbar_contact']}</Link>
           </li>
         </ul>
       </nav>
