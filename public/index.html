@@ -24,9 +24,17 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>JLopez</title>
+    <title>Mi portafolio</title>
   </head>
   <body>
+    <!-- <script>
+      // Redirige a la página principal (index.html) y mantiene la ruta original
+      const url = window.location.href;
+      console.log(url)
+      const baseURL = url.split('/#')[0];
+      const route = url.replace(baseURL, '');
+      /* window.location.replace(`${baseURL}/index.html#${route}`); */
+    </script> -->
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
